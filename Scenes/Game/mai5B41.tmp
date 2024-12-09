@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwok7bbhu5c2y"]
+
+[ext_resource type="PackedScene" uid="uid://c0il7eacoy8is" path="res://Scenes/bobby.tscn" id="1_7coj8"]
+[ext_resource type="PackedScene" uid="uid://cgys2c5ukaa8p" path="res://lora.tscn" id="2_ff8uh"]
+
+[node name="MainGame" type="Node2D"]
+
+[node name="Bobby" parent="." instance=ExtResource("1_7coj8")]
+position = Vector2(334, 241)
+
+[node name="Lora" parent="." instance=ExtResource("2_ff8uh")]
+position = Vector2(853, 291)

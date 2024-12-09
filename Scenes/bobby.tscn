@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0il7eacoy8is"]
+
+[ext_resource type="Script" path="res://Scenes/bobby.gd" id="1_bwa2i"]
+[ext_resource type="Texture2D" uid="uid://cti8ri6xdm611" path="res://Assets/Images/stickmanSprite.png" id="2_j1max"]
+[ext_resource type="PackedScene" uid="uid://big0d3oxo7k1j" path="res://interaction_area.tscn" id="3_oi3a2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boxyq"]
+size = Vector2(354, 375)
+
+[node name="Bobby" type="CharacterBody2D"]
+script = ExtResource("1_bwa2i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_j1max")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_boxyq")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_oi3a2")]

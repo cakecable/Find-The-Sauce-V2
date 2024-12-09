@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgys2c5ukaa8p"]
+
+[ext_resource type="Texture2D" uid="uid://bnptimjw5atv6" path="res://Assets/Images/lora.png" id="1_40gwf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nqnw3"]
+radius = 309.364
+
+[node name="Lora" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_40gwf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nqnw3")
